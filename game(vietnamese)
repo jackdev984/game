@@ -1,0 +1,31 @@
+import time
+password = "lienhopquoc"
+aliens = 2
+print("người ngoài hành tinh đang xâm chiếm trái đất!")
+time.sleep(1.5)
+print("bạn cần bật hệ thống phòng vệ toàn cầu")
+time.sleep(1.5)
+print("hi vọng bạn biết mật khẩu, vì tương lai trái đất. . .")
+time.sleep(2)
+print()
+print("      ---------------------------------------------")
+print("      CHÀO MỪNG ĐẾN VỚI HỆ THỐNG PHÒNG VỆ TOÀN CẦU")
+print("      ---------------------------------------------")
+print()
+guess = input("xin hãy điền mật khẩu!")
+while guess != password:
+  print()
+  print("mật khẩu sai!")
+  print()
+  aliens = aliens **2
+  print("có", aliens,"người ngoài hành tinh xâm nhập")
+  if aliens > 7400000000:
+      break
+  print()
+  print("gợi ý mật khẩu: một tổ chức thế giới")
+  print()
+  guess = input("nhanh lên nào hãy nhập mật khẩu!")
+if aliens > 7400000000:
+  print("khoongggg, người ngoài hành tinh đang đông hơn chúng ta, chúng ta thua rồi!")
+else:
+  print("hoan hô, chúng ta đã chiến thắng, thế giới được cứu rồi!")
